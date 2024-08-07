@@ -3,16 +3,15 @@
   import ImageViewer from "./ImageViewer.svelte";
   import { images } from "./images.js";
 
-  let currentImage = 0;
-  let image = images[currentImage];
+  let image = images[0];
 </script>
 
 <header>
   <Bar --bar-margin-bottom="0" --bar-border-bottom="none">
     <h1>Storm Stories</h1>
-    <Select bind:value={currentImage}>
+    <Select bind:value={image}>
       {#each images as img, i (img)}
-        <option value={i}>{img.title}</option>
+        <option value={img}>{img.title}</option>
       {/each}
     </Select>
   </Bar>
@@ -26,7 +25,9 @@
     </span>
   </Bar>
 </header>
-<ImageViewer {image} />
+{#key image}
+  <ImageViewer {image} />
+{/key}
 
 <style>
 </style>

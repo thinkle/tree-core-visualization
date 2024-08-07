@@ -17,7 +17,7 @@ imageFiles.forEach(async (file) => {
   mkdirp.sync(outputDir);
 
   // Generate tiles
-  await sharp(imagePath)
+  await sharp(imagePath, { limitInputPixels: false })
     .tile({
       size: 256,
       overlap: 2,
@@ -26,7 +26,8 @@ imageFiles.forEach(async (file) => {
     .toFile(path.join(outputDir, `${imageName}`));
 
   // Generate thumbnail
-  await sharp(imagePath)
+
+  await sharp(imagePath, { limitInputPixels: false })
     .resize({ width: 300 })
     .toFile(path.join(tilesDir, `${imageName}_thumbnail.jpg`));
 
