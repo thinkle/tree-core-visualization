@@ -7,10 +7,14 @@
   import { Page, Bar } from "contain-css-svelte";
 </script>
 
-<Page>
-  <Bar slot="header" --bar-justify="center">Tree Core Images</Bar>
-  <ImageContainer></ImageContainer>
-  <Bar slot="footer" --bar-margin-bottom="0">
+<ImageContainer></ImageContainer>
+<footer>
+  <Bar
+    slot="footer"
+    --bar-margin-bottom="0"
+    --bar-height="24px"
+    --bar-justify="right"
+  >
     <span
       >Created by <a href="https://www.tomhinkle.net" target="_blank"
         >Tom Hinkle</a
@@ -18,7 +22,13 @@
       for Harvard Forest</span
     >
   </Bar>
-</Page>
+</footer>
 
 <style>
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+  }
 </style>
