@@ -20,7 +20,7 @@
     "svelte": "^3.55.0"
   },
   "dependencies": {
-    "contain-css-svelte": "^0.0.4",
+    "contain-css-svelte": "^0.0.7",
     "mkdirp": "^3.0.1",
     "openseadragon": "^4.1.1",
     "sharp": "^0.33.4",

@@ -4,7 +4,7 @@
   import "contain-css-svelte/themes/dark.css";
   import "contain-css-svelte/vars/defaults.css";
 
-  import { Page, Bar, Base } from "contain-css-svelte";
+  import { Page, Bar } from "contain-css-svelte";
 </script>
 
 <Page>
