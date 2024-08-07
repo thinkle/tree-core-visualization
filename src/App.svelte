@@ -14,6 +14,7 @@
     --bar-margin-bottom="0"
     --bar-height="24px"
     --bar-justify="right"
+    --bar-link-fg="white"
   >
     <span
       >Created by <a href="https://www.tomhinkle.net" target="_blank"
