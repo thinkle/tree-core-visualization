@@ -11,12 +11,11 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
-    		"svelte-preprocess": "^5.0.4",
-
+    "svelte-preprocess": "^5.0.4",
     "vite": "^5.3.5"
   },
   "dependencies": {
-    "contain-css-svelte": "^0.0.7",
+    "contain-css-svelte": "^0.0.8",
     "mkdirp": "^3.0.1",
     "openseadragon": "^4.1.1",
     "sharp": "^0.33.4",
